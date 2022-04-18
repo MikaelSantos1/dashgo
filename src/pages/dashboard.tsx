@@ -61,6 +61,7 @@ const series=[
   {name:'series1',data:[31,120,10,28,51,18,109]}
 ]
 export default function Dashboard() {
+  
   return (
     <Flex direction='column' h="100vh">
       <Header />
@@ -72,9 +73,10 @@ export default function Dashboard() {
       flex="1" 
       gap="4" 
       minChildWidth="320px"  
+      
       alignItems="flex-start">
      <Box
-     p="8"
+     p={["6","8"]}
      bg="gray.800"
      borderRadius={8}
      
